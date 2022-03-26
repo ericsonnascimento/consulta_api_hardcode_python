@@ -42,8 +42,8 @@ while menu:
 
     elif menu == 3:
         id = input('Digite o ID do hotel: ')
-        nome = input('Digite o nome do hotel: ')
-        cidade = input('Digite a cidade do hotel: ')
+        nome = input('Digite o nome do hotel: ').strip().title()
+        cidade = input('Digite a cidade do hotel: ').strip().title()
         estrelas = input('Digite as estrelas do hotel: ')
         diaria = input(('Digite o valor da diaria do hotel: '))
         adicionar_dados(id=id, nome=nome, cidade=cidade, estrelas=estrelas, diaria=diaria)
@@ -51,8 +51,8 @@ while menu:
 
     elif menu == 4:
         id = input('Digite o ID do hotel: ')
-        nome = input('Digite o nome do hotel: ')
-        cidade = input('Digite a cidade do hotel: ')
+        nome = input('Digite o nome do hotel: ').strip().title()
+        cidade = input('Digite a cidade do hotel: ').strip().title()
         estrelas = input('Digite as estrelas do hotel: ')
         diaria = input(('Digite o valor da diaria do hotel: '))
         alterar_dados(id=id, nome=nome, cidade=cidade, estrelas=estrelas, diaria=diaria)
